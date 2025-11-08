@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuckyWin Casino - Премиум Игровая Платформа</title>
+    <title>Best PayPal Casinos 2024 - Trusted Online Casinos That Accept PayPal</title>
     <style>
         * {
             margin: 0;
@@ -12,513 +12,662 @@
         }
 
         :root {
-            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --dark-bg: #0a0e27;
-            --card-bg: #151a3a;
-            --text-primary: #ffffff;
-            --text-secondary: #a8b2d1;
-            --accent: #6366f1;
-            --accent-hover: #818cf8;
+            --primary: #0070ba;
+            --primary-dark: #003087;
+            --secondary: #ffc439;
             --success: #10b981;
+            --danger: #ef4444;
             --warning: #f59e0b;
+            --dark: #1a1a2e;
+            --light: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: var(--dark-bg);
+            background: var(--light);
             color: var(--text-primary);
-            overflow-x: hidden;
+            line-height: 1.6;
         }
 
-        /* Animated Background */
-        .bg-animation {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background: linear-gradient(270deg, #0a0e27, #1a1f4e, #0a0e27);
-            background-size: 600% 600%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50% }
-            50% { background-position: 100% 50% }
-            100% { background-position: 0% 50% }
-        }
-
-        /* Navigation */
-        nav {
-            background: rgba(21, 26, 58, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
+        /* Header */
+        header {
+            background: white;
+            box-shadow: var(--card-shadow);
             position: sticky;
             top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            z-index: 100;
         }
 
-        .nav-container {
+        nav {
             max-width: 1400px;
             margin: 0 auto;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: pulse 2s infinite;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1) }
-            50% { transform: scale(1.05) }
+        .logo img {
+            width: 30px;
+            height: 30px;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
             list-style: none;
+            gap: 2rem;
         }
 
         .nav-links a {
-            color: var(--text-secondary);
+            color: var(--text-primary);
             text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: var(--text-primary);
+            color: var(--primary);
         }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .btn-primary {
-            background: var(--primary-gradient);
-            color: white;
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
         }
 
         /* Hero Section */
         .hero {
-            padding: 5rem 2rem;
-            text-align: center;
-            max-width: 1400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 4rem 2rem;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 1200px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #667eea, #f093fb, #667eea);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textGradient 3s linear infinite;
-        }
-
-        @keyframes textGradient {
-            to { background-position: 200% center }
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-        }
-
-        .bonus-banner {
-            background: var(--card-bg);
-            border: 2px solid var(--accent);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 3rem auto;
-            max-width: 800px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bonus-banner::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: var(--primary-gradient);
-            border-radius: 20px;
-            z-index: -1;
-            animation: borderGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes borderGlow {
-            0%, 100% { opacity: 1 }
-            50% { opacity: 0.5 }
-        }
-
-        .bonus-amount {
             font-size: 3rem;
-            font-weight: bold;
-            color: var(--warning);
-            text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
 
-        /* Steps Section */
-        .steps-section {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
         }
 
-        .section-title {
-            font-size: 2.5rem;
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
             text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
         }
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: var(--primary-gradient);
-            border-radius: 2px;
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
         }
 
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
         }
 
-        .step-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 15px;
-            position: relative;
-            overflow: hidden;
+        /* Filter Bar */
+        .filter-bar {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 73px;
+            z-index: 90;
+            box-shadow: var(--card-shadow);
+        }
+
+        .filter-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-label {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        select {
+            padding: 0.5rem 2rem 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: white;
+            color: var(--text-primary);
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.5rem center;
+            background-size: 20px;
+        }
+
+        .filter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            cursor: pointer;
             transition: all 0.3s ease;
-            border: 1px solid rgba(99, 102, 241, 0.2);
         }
 
-        .step-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        .filter-tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
         }
 
-        .step-number {
-            width: 40px;
-            height: 40px;
-            background: var(--primary-gradient);
+        .filter-tag.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Top Banner */
+        .top-pick-banner {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .top-pick-content {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .top-pick-badge {
+            background: white;
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .casino-logo-large {
+            width: 180px;
+            height: 80px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            box-shadow: var(--card-shadow);
+        }
+
+        .top-pick-details h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .bonus-text {
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .top-pick-features {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-badge {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Casino Cards */
+        .casino-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .casino-card:hover {
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .casino-header {
+            display: grid;
+            grid-template-columns: auto auto 1fr auto auto;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .rank-badge {
+            width: 50px;
+            height: 50px;
+            background: var(--light);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: var(--primary);
         }
 
-        .step-card h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+        .rank-badge.gold {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: var(--text-primary);
         }
 
-        .step-card p {
-            color: var(--text-secondary);
-            line-height: 1.6;
+        .rank-badge.silver {
+            background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+            color: var(--text-primary);
         }
 
-        /* Casino Logos */
-        .casino-logos {
-            padding: 3rem 2rem;
-            background: rgba(21, 26, 58, 0.5);
-        }
-
-        .logos-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
+        .rank-badge.bronze {
+            background: linear-gradient(135deg, #cd7f32, #e4a853);
+            color: white;
         }
 
         .casino-logo {
             width: 150px;
-            height: 80px;
-            background: var(--card-bg);
-            border-radius: 10px;
+            height: 60px;
+            background: var(--light);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            cursor: pointer;
+            font-weight: bold;
+            color: var(--primary);
+            border: 1px solid var(--border);
         }
 
-        .casino-logo:hover {
-            transform: scale(1.1);
-            border-color: var(--accent);
-            box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
-        }
-
-        /* Promotions Carousel */
-        .promotions {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .promo-carousel {
-            display: flex;
-            gap: 2rem;
-            overflow-x: auto;
-            padding: 1rem 0;
-            scroll-snap-type: x mandatory;
-        }
-
-        .promo-carousel::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .promo-carousel::-webkit-scrollbar-track {
-            background: var(--card-bg);
-            border-radius: 4px;
-        }
-
-        .promo-carousel::-webkit-scrollbar-thumb {
-            background: var(--accent);
-            border-radius: 4px;
-        }
-
-        .promo-card {
-            min-width: 350px;
-            background: var(--card-bg);
-            border-radius: 15px;
-            overflow: hidden;
-            scroll-snap-align: start;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-        }
-
-        .promo-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
-        }
-
-        .promo-image {
-            height: 200px;
-            background: var(--primary-gradient);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
-
-        .promo-content {
-            padding: 1.5rem;
-        }
-
-        .promo-tag {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
-        }
-
-        .promo-title {
+        .casino-info h3 {
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
+            color: var(--text-primary);
         }
 
-        .promo-description {
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.125rem;
+        }
+
+        .star {
+            color: var(--secondary);
+            font-size: 1.125rem;
+        }
+
+        .star.empty {
+            color: var(--border);
+        }
+
+        .rating-number {
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        .rating-count {
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
+            font-size: 0.875rem;
         }
 
-        /* Games Grid */
-        .games-section {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .games-filter {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            background: transparent;
-            color: var(--text-secondary);
-            border: 2px solid var(--card-bg);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .filter-btn.active,
-        .filter-btn:hover {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .game-card {
-            background: var(--card-bg);
-            border-radius: 10px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .game-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
-        }
-
-        .game-card:hover .play-overlay {
-            opacity: 1;
-        }
-
-        .game-image {
-            height: 250px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            position: relative;
-        }
-
-        .play-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .play-btn {
-            width: 60px;
-            height: 60px;
-            background: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .play-btn:hover {
-            transform: scale(1.2);
-            background: var(--accent-hover);
-        }
-
-        .game-title {
-            padding: 1rem;
-            font-size: 0.95rem;
+        .bonus-info {
             text-align: center;
         }
 
-        /* FAQ Section */
-        .faq-section {
-            padding: 4rem 2rem;
-            background: rgba(21, 26, 58, 0.5);
+        .bonus-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
         }
 
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
+        .bonus-amount {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--success);
         }
 
-        .faq-item {
-            background: var(--card-bg);
-            margin-bottom: 1rem;
-            border-radius: 10px;
-            overflow: hidden;
+        .bonus-code {
+            background: var(--light);
+            border: 2px dashed var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+            margin-top: 0.25rem;
+            display: inline-block;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
             transition: all 0.3s ease;
         }
 
-        .faq-question {
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--light);
+        }
+
+        /* Casino Details */
+        .casino-details {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .pros, .cons {
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .pros {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 3px solid var(--success);
+        }
+
+        .cons {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 3px solid var(--danger);
+        }
+
+        .pros h4, .cons h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pros h4 {
+            color: var(--success);
+        }
+
+        .cons h4 {
+            color: var(--danger);
+        }
+
+        .pros ul, .cons ul {
+            list-style: none;
+            font-size: 0.875rem;
+        }
+
+        .pros li, .cons li {
+            padding: 0.25rem 0;
+            display: flex;
+            align-items: start;
+            gap: 0.5rem;
+        }
+
+        .pros li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .cons li::before {
+            content: "✗";
+            color: var(--danger);
+            font-weight: bold;
+        }
+
+        .casino-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--light);
+            border-radius: 6px;
+            font-size: 0.875rem;
+        }
+
+        .feature-icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Info Sections */
+        .info-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .info-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
             padding: 1.5rem;
+            background: var(--light);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            overflow-x: auto;
+            margin-top: 2rem;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:hover {
+            background: var(--light);
+        }
+
+        .table-logo {
+            width: 120px;
+            height: 40px;
+            background: var(--light);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            background: var(--light);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .faq-question {
+            padding: 1.25rem;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-weight: 500;
             transition: all 0.3s ease;
         }
 
         .faq-question:hover {
-            background: rgba(99, 102, 241, 0.1);
+            background: white;
         }
 
         .faq-icon {
             transition: transform 0.3s ease;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            color: var(--primary);
         }
 
         .faq-item.active .faq-icon {
@@ -534,55 +683,19 @@
 
         .faq-item.active .faq-answer {
             max-height: 300px;
-            padding: 0 1.5rem 1.5rem;
-        }
-
-        /* Payment Table */
-        .payment-section {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .table-container {
-            overflow-x: auto;
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 2rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            background: var(--accent);
-            color: white;
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 1rem;
-            border-bottom: 1px solid rgba(168, 178, 209, 0.1);
-            color: var(--text-secondary);
-        }
-
-        tr:hover {
-            background: rgba(99, 102, 241, 0.05);
+            padding: 0 1.25rem 1.25rem;
         }
 
         /* Footer */
         footer {
-            background: var(--card-bg);
-            padding: 3rem 2rem 1rem;
-            margin-top: 4rem;
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 5rem;
         }
 
         .footer-content {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -592,7 +705,7 @@
 
         .footer-section h4 {
             margin-bottom: 1rem;
-            color: var(--accent);
+            color: var(--secondary);
         }
 
         .footer-links {
@@ -600,7 +713,7 @@
         }
 
         .footer-links a {
-            color: var(--text-secondary);
+            color: #94a3b8;
             text-decoration: none;
             display: block;
             padding: 0.25rem 0;
@@ -608,406 +721,651 @@
         }
 
         .footer-links a:hover {
-            color: var(--text-primary);
+            color: white;
         }
 
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid rgba(168, 178, 209, 0.1);
-            color: var(--text-secondary);
+            border-top: 1px solid #334155;
+            color: #94a3b8;
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
+        @media (max-width: 968px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+            .casino-header {
+                grid-template-columns: auto 1fr;
+                gap: 1rem;
             }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .bonus-amount {
-                font-size: 2rem;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .games-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-
-            .promo-card {
-                min-width: 280px;
-            }
+            .casino-logo { width: 120px; }
+            .bonus-info, .cta-buttons { grid-column: span 2; }
+            .casino-details { grid-template-columns: 1fr; }
+            .top-pick-content { grid-template-columns: 1fr; text-align: center; }
         }
 
-        /* Loading Animation */
-        @keyframes shimmer {
-            0% { background-position: -1000px 0 }
-            100% { background-position: 1000px 0 }
+        @media (max-width: 640px) {
+            .filter-container { flex-direction: column; align-items: stretch; }
+            .pros-cons { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 0.875rem; }
+            th, td { padding: 0.5rem; }
         }
 
-        .shimmer {
-            animation: shimmer 2s infinite;
-            background: linear-gradient(90deg, var(--card-bg) 25%, rgba(99, 102, 241, 0.1) 50%, var(--card-bg) 75%);
-            background-size: 1000px 100%;
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .casino-card {
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 1rem;
+            background: var(--light);
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .paypal-badge {
+            background: linear-gradient(135deg, #00457C, #0070ba);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
         }
     </style>
 </head>
 <body>
-    <div class="bg-animation"></div>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">🎰 LuckyWin</div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                💳 PayPalCasinos.com
+            </div>
             <ul class="nav-links">
-                <li><a href="#games">Игры</a></li>
-                <li><a href="#promotions">Акции</a></li>
-                <li><a href="#bonuses">Бонусы</a></li>
+                <li><a href="#top-casinos">Top Casinos</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#bonuses">Bonuses</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#payments">Платежи</a></li>
+                <li><a href="#guides">Guides</a></li>
             </ul>
-            <button class="btn-primary">Начать Игру</button>
-        </div>
-    </nav>
+            <div class="trust-badge">
+                🔒 SSL Secured | 18+ Only
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Добро пожаловать в LuckyWin Casino</h1>
-        <p>Премиум игровая платформа с лучшими слотами и живыми дилерами</p>
+        <div class="hero-content">
+            <h1>Best PayPal Casinos in 2024</h1>
+            <p class="hero-subtitle">Trusted Online Casinos That Accept PayPal - Fast, Secure & Reliable</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">127</div>
+                    <div class="stat-label">Casinos Reviewed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">PayPal Accepted</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Expert Support</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$50K+</div>
+                    <div class="stat-label">Total Bonuses</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="filter-container">
+            <div class="filter-group">
+                <span class="filter-label">Sort by:</span>
+                <select>
+                    <option>Recommended</option>
+                    <option>Highest Rated</option>
+                    <option>Biggest Bonus</option>
+                    <option>Fastest Payout</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Casino Type:</span>
+                <select>
+                    <option>All Types</option>
+                    <option>Slots Only</option>
+                    <option>Live Casino</option>
+                    <option>Sports Betting</option>
+                    <option>Crypto Friendly</option>
+                </select>
+            </div>
+            <div class="filter-group" style="flex: 1;">
+                <span class="filter-label">Features:</span>
+                <span class="filter-tag active">💳 PayPal</span>
+                <span class="filter-tag">📱 Mobile</span>
+                <span class="filter-tag">⚡ Instant Payout</span>
+                <span class="filter-tag">🎰 Free Spins</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="top-casinos">
         
-        <div class="bonus-banner">
-            <h2>🎁 Эксклюзивное Предложение</h2>
-            <div class="bonus-amount">300% + 500 FS</div>
-            <p>На первый депозит для новых игроков</p>
-            <button class="btn-primary" style="margin-top: 1rem;">Получить Бонус</button>
+        <!-- Top Pick Banner -->
+        <div class="top-pick-banner">
+            <div class="top-pick-content">
+                <div class="top-pick-badge">
+                    🏆 Editor's Choice
+                </div>
+                <div class="casino-logo-large">
+                    888 Casino
+                </div>
+                <div class="top-pick-details">
+                    <h3>Best Overall PayPal Casino 2024</h3>
+                    <div class="bonus-text">
+                        <strong>Exclusive: 200% up to $2000 + 100 Free Spins</strong>
+                    </div>
+                    <div class="top-pick-features">
+                        <span class="feature-badge">✓ Instant PayPal Withdrawals</span>
+                        <span class="feature-badge">✓ 2000+ Games</span>
+                        <span class="feature-badge">✓ Licensed & Regulated</span>
+                        <span class="feature-badge">✓ 24/7 Support</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                    <a href="#" class="btn btn-secondary">Read Review</a>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- Steps Section -->
-    <section class="steps-section">
-        <h2 class="section-title">Как начать играть?</h2>
-        <div class="steps-grid">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <h3>Регистрация</h3>
-                <p>Создайте аккаунт за 30 секунд. Просто укажите email и придумайте пароль. Никаких сложных форм!</p>
+        <!-- Casino Cards -->
+        <div class="casino-card">
+            <div class="casino-header">
+                <div class="rank-badge gold">#1</div>
+                <div class="casino-logo">888 Casino</div>
+                <div class="casino-info">
+                    <h3>888 Casino <span class="paypal-badge">💳 PayPal</span></h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-number">4.9</span>
+                        <span class="rating-count">(2,341 reviews)</span>
+                    </div>
+                </div>
+                <div class="bonus-info">
+                    <div class="bonus-label">Welcome Bonus</div>
+                    <div class="bonus-amount">$2000</div>
+                    <div class="bonus-code">PAYPAL200</div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Claim Bonus</a>
+                    <a href="#" class="btn btn-secondary">Full Review</a>
+                </div>
             </div>
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <h3>Пополнение счета</h3>
-                <p>Выберите удобный способ оплаты из 20+ доступных вариантов. Мгновенное зачисление средств.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <h3>Получите бонус</h3>
-                <p>Активируйте приветственный бонус или введите промокод для дополнительных преимуществ.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">4</div>
-                <h3>Играйте и выигрывайте</h3>
-                <p>Наслаждайтесь тысячами игр от лучших провайдеров. Быстрые выплаты гарантированы!</p>
+            <div class="casino-details">
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✓ Pros</h4>
+                        <ul>
+                            <li>Instant PayPal deposits & withdrawals</li>
+                            <li>Huge game selection (2000+ titles)</li>
+                            <li>Excellent mobile app</li>
+                            <li>24/7 customer support</li>
+                            <li>Regular promotions & VIP program</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>✗ Cons</h4>
+                        <ul>
+                            <li>High wagering requirements (40x)</li>
+                            <li>Limited in some countries</li>
+                            <li>Slow email support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="casino-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>0-24h Payout</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎰</span>
+                        <span>2000+ Games</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📱</span>
+                        <span>Mobile App</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎮</span>
+                        <span>Live Casino</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💳</span>
+                        <span>PayPal Verified</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🏆</span>
+                        <span>Licensed</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Casino Logos -->
-    <section class="casino-logos">
-        <div class="logos-container">
-            <div class="casino-logo">🎯</div>
-            <div class="casino-logo">🎲</div>
-            <div class="casino-logo">🃏</div>
-            <div class="casino-logo">🎰</div>
-            <div class="casino-logo">💎</div>
+        <div class="casino-card">
+            <div class="casino-header">
+                <div class="rank-badge silver">#2</div>
+                <div class="casino-logo">BetMGM</div>
+                <div class="casino-info">
+                    <h3>BetMGM Casino <span class="paypal-badge">💳 PayPal</span></h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-number">4.8</span>
+                        <span class="rating-count">(1,892 reviews)</span>
+                    </div>
+                </div>
+                <div class="bonus-info">
+                    <div class="bonus-label">Welcome Package</div>
+                    <div class="bonus-amount">$1500</div>
+                    <div class="bonus-code">PAYPALWIN</div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Claim Bonus</a>
+                    <a href="#" class="btn btn-secondary">Full Review</a>
+                </div>
+            </div>
+            <div class="casino-details">
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✓ Pros</h4>
+                        <ul>
+                            <li>Fast PayPal processing</li>
+                            <li>Great sportsbook integration</li>
+                            <li>Exclusive MGM rewards</li>
+                            <li>Low minimum deposits ($10)</li>
+                            <li>Excellent slot selection</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>✗ Cons</h4>
+                        <ul>
+                            <li>Limited live dealer games</li>
+                            <li>Geo-restrictions in some states</li>
+                            <li>Complex bonus terms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="casino-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>1-3 Days Payout</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎰</span>
+                        <span>1500+ Games</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🏈</span>
+                        <span>Sportsbook</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💳</span>
+                        <span>PayPal Verified</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎁</span>
+                        <span>Loyalty Program</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- Promotions -->
-    <section class="promotions" id="promotions">
-        <h2 class="section-title">Актуальные промо-акции</h2>
-        <div class="promo-carousel">
-            <div class="promo-card">
-                <div class="promo-image">🎮</div>
-                <div class="promo-content">
-                    <span class="promo-tag">Киберспорт</span>
-                    <h3 class="promo-title">Фрибет на киберспорт</h3>
-                    <p class="promo-description">Делайте ставки от 1000₽ и получите фрибет до 10000₽!</p>
-                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+        <div class="casino-card">
+            <div class="casino-header">
+                <div class="rank-badge bronze">#3</div>
+                <div class="casino-logo">Caesars</div>
+                <div class="casino-info">
+                    <h3>Caesars Palace Online <span class="paypal-badge">💳 PayPal</span></h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="rating-number">4.7</span>
+                        <span class="rating-count">(1,456 reviews)</span>
+                    </div>
+                </div>
+                <div class="bonus-info">
+                    <div class="bonus-label">Sign-up Offer</div>
+                    <div class="bonus-amount">$2500</div>
+                    <div class="bonus-code">CAESAR250</div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Claim Bonus</a>
+                    <a href="#" class="btn btn-secondary">Full Review</a>
                 </div>
             </div>
-            <div class="promo-card">
-                <div class="promo-image">⚽</div>
-                <div class="promo-content">
-                    <span class="promo-tag">Спорт</span>
-                    <h3 class="promo-title">Кешбэк 20% на футбол</h3>
-                    <p class="promo-description">Возврат 20% от проигранных ставок каждую неделю</p>
-                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+            <div class="casino-details">
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✓ Pros</h4>
+                        <ul>
+                            <li>Trusted brand reputation</li>
+                            <li>Caesars Rewards integration</li>
+                            <li>PayPal instant processing</li>
+                            <li>Great progressive jackpots</li>
+                            <li>Regular tournament events</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>✗ Cons</h4>
+                        <ul>
+                            <li>Higher minimum withdrawals</li>
+                            <li>Limited cryptocurrency options</li>
+                            <li>Occasional app crashes</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="promo-card">
-                <div class="promo-image">🎁</div>
-                <div class="promo-content">
-                    <span class="promo-tag">Бонус</span>
-                    <h3 class="promo-title">Бесплатные спины</h3>
-                    <p class="promo-description">50 фриспинов для новых подписчиков Telegram</p>
-                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
-                </div>
-            </div>
-            <div class="promo-card">
-                <div class="promo-image">💰</div>
-                <div class="promo-content">
-                    <span class="promo-tag">VIP</span>
-                    <h3 class="promo-title">Релоад бонус 50%</h3>
-                    <p class="promo-description">Каждый понедельник бонус на депозит до 20000₽</p>
-                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+                <div class="casino-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>Same Day Payout</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎰</span>
+                        <span>1800+ Games</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💰</span>
+                        <span>Jackpots</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💳</span>
+                        <span>PayPal Express</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Games Section -->
-    <section class="games-section" id="games">
-        <h2 class="section-title">Популярные игры</h2>
-        <div class="games-filter">
-            <button class="filter-btn active">Все игры</button>
-            <button class="filter-btn">🔥 Хиты</button>
-            <button class="filter-btn">🎰 Слоты</button>
-            <button class="filter-btn">🃏 Карты</button>
-            <button class="filter-btn">🎲 Рулетка</button>
-            <button class="filter-btn">💎 Джекпот</button>
-        </div>
-        <div class="games-grid">
-            <div class="game-card">
-                <div class="game-image">
-                    🍒
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Fruit Paradise</div>
+        <!-- Comparison Table -->
+        <section class="info-section">
+            <h2>📊 Quick Comparison Table</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Casino</th>
+                            <th>PayPal Deposit</th>
+                            <th>PayPal Withdrawal</th>
+                            <th>Min Deposit</th>
+                            <th>Payout Time</th>
+                            <th>Bonus</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="table-logo">888 Casino</div></td>
+                            <td>✅ Instant</td>
+                            <td>✅ 0-24h</td>
+                            <td>$10</td>
+                            <td>0-24 hours</td>
+                            <td>200% up to $2000</td>
+                            <td>⭐ 4.9/5</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-logo">BetMGM</div></td>
+                            <td>✅ Instant</td>
+                            <td>✅ 1-3 days</td>
+                            <td>$10</td>
+                            <td>1-3 days</td>
+                            <td>100% up to $1500</td>
+                            <td>⭐ 4.8/5</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-logo">Caesars</div></td>
+                            <td>✅ Instant</td>
+                            <td>✅ Same day</td>
+                            <td>$20</td>
+                            <td>Same day</td>
+                            <td>100% up to $2500</td>
+                            <td>⭐ 4.7/5</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-logo">DraftKings</div></td>
+                            <td>✅ Instant</td>
+                            <td>✅ 1-2 days</td>
+                            <td>$5</td>
+                            <td>1-2 days</td>
+                            <td>100% up to $2000</td>
+                            <td>⭐ 4.6/5</td>
+                        </tr>
+                        <tr>
+                            <td><div class="table-logo">FanDuel</div></td>
+                            <td>✅ Instant</td>
+                            <td>✅ 0-48h</td>
+                            <td>$10</td>
+                            <td>0-48 hours</td>
+                            <td>Play $1 Get $200</td>
+                            <td>⭐ 4.6/5</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="game-card">
-                <div class="game-image">
-                    💎
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Diamond Rush</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    🐠
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Ocean Treasures</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    🔥
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Fire Wins</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    ⚡
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Thunder Strike</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    🌟
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Star Fortune</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    🍀
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Lucky Clover</div>
-            </div>
-            <div class="game-card">
-                <div class="game-image">
-                    👑
-                    <div class="play-overlay">
-                        <div class="play-btn">▶</div>
-                    </div>
-                </div>
-                <div class="game-title">Royal Crown</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="faq-container">
-            <h2 class="section-title">Часто задаваемые вопросы</h2>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Как получить приветственный бонус?</span>
-                    <span class="faq-icon">+</span>
+        <!-- How PayPal Works Section -->
+        <section class="info-section" id="how-it-works">
+            <h2>💳 How PayPal Works at Online Casinos</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                PayPal is one of the most trusted and secure payment methods for online gambling. Here's everything you need to know about using PayPal at online casinos.
+            </p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🚀 Quick Setup</h3>
+                    <p>Link your bank account or card to PayPal once, then use it across all supported casinos without sharing financial details.</p>
                 </div>
-                <div class="faq-answer">
-                    Приветственный бонус активируется автоматически при первом пополнении счета. Минимальная сумма депозита - 1000₽. Бонус начисляется мгновенно и доступен для игры сразу после пополнения. Вейджер x30.
+                <div class="info-card">
+                    <h3>🔒 Enhanced Security</h3>
+                    <p>PayPal uses industry-leading encryption and fraud protection. Your financial information is never shared with the casino.</p>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Какие способы оплаты доступны?</span>
-                    <span class="faq-icon">+</span>
+                <div class="info-card">
+                    <h3>⚡ Instant Deposits</h3>
+                    <p>Fund your casino account instantly with PayPal. Start playing your favorite games within seconds of making a deposit.</p>
                 </div>
-                <div class="faq-answer">
-                    Мы поддерживаем более 20 способов оплаты, включая банковские карты, электронные кошельки, криптовалюту и мобильные платежи. Все транзакции защищены SSL-шифрованием.
+                <div class="info-card">
+                    <h3>💰 Fast Withdrawals</h3>
+                    <p>Withdraw winnings to PayPal in as little as 30 minutes. Most casinos process PayPal withdrawals within 24 hours.</p>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Как быстро выводятся средства?</span>
-                    <span class="faq-icon">+</span>
+                <div class="info-card">
+                    <h3>📱 Mobile Friendly</h3>
+                    <p>Use PayPal on any device - desktop, tablet, or smartphone. The PayPal app makes mobile casino banking seamless.</p>
                 </div>
-                <div class="faq-answer">
-                    Скорость вывода зависит от выбранного метода. Электронные кошельки - до 15 минут, банковские карты - до 24 часов, банковский перевод - до 3 рабочих дней.
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Есть ли мобильное приложение?</span>
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    Да, у нас есть мобильные приложения для iOS и Android. Также доступна мобильная версия сайта, оптимизированная для всех устройств.
+                <div class="info-card">
+                    <h3>🎁 Bonus Eligible</h3>
+                    <p>PayPal deposits qualify for welcome bonuses at most casinos. Some sites even offer exclusive PayPal bonuses.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Payment Table -->
-    <section class="payment-section" id="payments">
-        <h2 class="section-title">Платежные методы</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Метод</th>
-                        <th>Мин. депозит</th>
-                        <th>Макс. депозит</th>
-                        <th>Мин. вывод</th>
-                        <th>Макс. вывод</th>
-                        <th>Время зачисления</th>
-                        <th>Время вывода</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Банковские карты</td>
-                        <td>1000₽</td>
-                        <td>500000₽</td>
-                        <td>3000₽</td>
-                        <td>300000₽</td>
-                        <td>Мгновенно</td>
-                        <td>До 24 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Электронные кошельки</td>
-                        <td>500₽</td>
-                        <td>300000₽</td>
-                        <td>1000₽</td>
-                        <td>200000₽</td>
-                        <td>Мгновенно</td>
-                        <td>До 15 минут</td>
-                    </tr>
-                    <tr>
-                        <td>Криптовалюта</td>
-                        <td>1000₽</td>
-                        <td>Без лимита</td>
-                        <td>2000₽</td>
-                        <td>Без лимита</td>
-                        <td>До 30 минут</td>
-                        <td>До 1 часа</td>
-                    </tr>
-                    <tr>
-                        <td>Мобильные платежи</td>
-                        <td>500₽</td>
-                        <td>50000₽</td>
-                        <td>1000₽</td>
-                        <td>50000₽</td>
-                        <td>Мгновенно</td>
-                        <td>До 24 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Банковский перевод</td>
-                        <td>5000₽</td>
-                        <td>1000000₽</td>
-                        <td>10000₽</td>
-                        <td>500000₽</td>
-                        <td>До 3 дней</td>
-                        <td>До 5 дней</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- FAQ Section -->
+        <section class="info-section" id="faq">
+            <h2>❓ Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is PayPal safe for online gambling?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, PayPal is one of the safest payment methods for online gambling. It uses advanced encryption, offers buyer protection, and never shares your financial details with the casino. Additionally, PayPal only partners with licensed and regulated casinos.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are there fees for using PayPal at casinos?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most online casinos don't charge fees for PayPal deposits or withdrawals. PayPal itself doesn't charge for sending money to merchants. However, currency conversion fees may apply for international transactions.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How fast are PayPal withdrawals?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        PayPal withdrawals are among the fastest in the industry. Most casinos process PayPal withdrawals within 0-24 hours, with some offering instant withdrawals. Once processed, the funds appear in your PayPal account immediately.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I claim bonuses with PayPal deposits?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, PayPal deposits are eligible for welcome bonuses and promotions at most casinos. Some casinos even offer exclusive PayPal bonuses. Always check the bonus terms to confirm PayPal is an eligible payment method.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are PayPal deposit and withdrawal limits?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Limits vary by casino but typically range from $10-$10,000 for deposits and $20-$50,000 for withdrawals. VIP players often have higher limits. PayPal itself has high transaction limits that rarely affect casino players.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why isn't PayPal available at all casinos?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        PayPal has strict policies about online gambling and only partners with licensed, regulated casinos in jurisdictions where online gambling is legal. This ensures player protection but limits availability to certain regions and licensed operators.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators">
+            <div class="trust-item">
+                <span>🔐</span>
+                <span>SSL Encrypted</span>
+            </div>
+            <div class="trust-item">
+                <span>✅</span>
+                <span>Independently Verified</span>
+            </div>
+            <div class="trust-item">
+                <span>📝</span>
+                <span>Licensed Casinos Only</span>
+            </div>
+            <div class="trust-item">
+                <span>👥</span>
+                <span>10,000+ User Reviews</span>
+            </div>
+            <div class="trust-item">
+                <span>🕐</span>
+                <span>Updated Daily</span>
+            </div>
+            <div class="trust-item">
+                <span>🎯</span>
+                <span>Expert Tested</span>
+            </div>
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>О нас</h4>
+                <h4>Casino Reviews</h4>
                 <ul class="footer-links">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Лицензии</a></li>
-                    <li><a href="#">Ответственная игра</a></li>
-                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">888 Casino Review</a></li>
+                    <li><a href="#">BetMGM Review</a></li>
+                    <li><a href="#">Caesars Review</a></li>
+                    <li><a href="#">DraftKings Review</a></li>
+                    <li><a href="#">FanDuel Review</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Игры</h4>
+                <h4>Payment Methods</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Слоты</a></li>
-                    <li><a href="#">Живое казино</a></li>
-                    <li><a href="#">Настольные игры</a></li>
-                    <li><a href="#">Джекпоты</a></li>
+                    <li><a href="#">PayPal Casinos</a></li>
+                    <li><a href="#">Credit Card Casinos</a></li>
+                    <li><a href="#">Crypto Casinos</a></li>
+                    <li><a href="#">Bank Transfer Casinos</a></li>
+                    <li><a href="#">E-Wallet Casinos</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Помощь</h4>
+                <h4>Resources</h4>
                 <ul class="footer-links">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Поддержка 24/7</a></li>
-                    <li><a href="#">Правила и условия</a></li>
-                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">How to Use PayPal</a></li>
+                    <li><a href="#">Casino Bonuses Guide</a></li>
+                    <li><a href="#">Responsible Gambling</a></li>
+                    <li><a href="#">Casino News</a></li>
+                    <li><a href="#">Gambling Laws</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Контакты</h4>
+                <h4>About Us</h4>
                 <ul class="footer-links">
-                    <li><a href="#">support@luckywin.com</a></li>
-                    <li><a href="#">Telegram: @luckywin</a></li>
-                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Review Process</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 LuckyWin Casino. Все права защищены. 18+</p>
+            <p>&copy; 2024 PayPalCasinos.com | 18+ Only | Please Gamble Responsibly | BeGambleAware.org</p>
         </div>
     </footer>
 
@@ -1016,24 +1374,24 @@
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const item = question.parentElement;
-                item.classList.toggle('active');
+                const wasActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
             });
         });
 
-        // Games Filter
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelector('.filter-btn.active').classList.remove('active');
-                btn.classList.add('active');
-                
-                // Add filter animation
-                const games = document.querySelectorAll('.game-card');
-                games.forEach(game => {
-                    game.style.animation = 'none';
-                    setTimeout(() => {
-                        game.style.animation = 'fadeIn 0.5s ease';
-                    }, 10);
-                });
+        // Filter Tags
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                tag.classList.toggle('active');
             });
         });
 
@@ -1043,22 +1401,19 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    const headerOffset = 150;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
 
-        // Add fade-in animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(20px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Intersection Observer for animations
+        // Casino Card Animations on Scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1067,13 +1422,50 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 0.6s ease forwards';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.step-card, .promo-card, .game-card').forEach(el => {
-            observer.observe(el);
+        // Observe casino cards
+        document.querySelectorAll('.casino-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Star Rating Hover Effect
+        document.querySelectorAll('.rating').forEach(rating => {
+            rating.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            rating.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Copy Bonus Code
+        document.querySelectorAll('.bonus-code').forEach(code => {
+            code.style.cursor = 'pointer';
+            code.addEventListener('click', function() {
+                const text = this.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    const original = this.textContent;
+                    this.textContent = '✓ Copied!';
+                    this.style.background = 'var(--success)';
+                    this.style.color = 'white';
+                    this.style.borderColor = 'var(--success)';
+                    
+                    setTimeout(() => {
+                        this.textContent = original;
+                        this.style.background = 'var(--light)';
+                        this.style.color = '';
+                        this.style.borderColor = 'var(--primary)';
+                    }, 2000);
+                });
+            });
         });
     </script>
 </body>
