@@ -1,10 +1,1080 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Мой сайт на GitHub Pages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyWin Casino - Премиум Игровая Платформа</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --dark-bg: #0a0e27;
+            --card-bg: #151a3a;
+            --text-primary: #ffffff;
+            --text-secondary: #a8b2d1;
+            --accent: #6366f1;
+            --accent-hover: #818cf8;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(270deg, #0a0e27, #1a1f4e, #0a0e27);
+            background-size: 600% 600%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50% }
+            50% { background-position: 100% 50% }
+            100% { background-position: 0% 50% }
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(21, 26, 58, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) }
+            50% { transform: scale(1.05) }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 2rem;
+            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #667eea, #f093fb, #667eea);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradient 3s linear infinite;
+        }
+
+        @keyframes textGradient {
+            to { background-position: 200% center }
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .bonus-banner {
+            background: var(--card-bg);
+            border: 2px solid var(--accent);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 800px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bonus-banner::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--primary-gradient);
+            border-radius: 20px;
+            z-index: -1;
+            animation: borderGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { opacity: 1 }
+            50% { opacity: 0.5 }
+        }
+
+        .bonus-amount {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--warning);
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+        }
+
+        /* Steps Section */
+        .steps-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .step-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .step-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Casino Logos */
+        .casino-logos {
+            padding: 3rem 2rem;
+            background: rgba(21, 26, 58, 0.5);
+        }
+
+        .logos-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .casino-logo {
+            width: 150px;
+            height: 80px;
+            background: var(--card-bg);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .casino-logo:hover {
+            transform: scale(1.1);
+            border-color: var(--accent);
+            box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Promotions Carousel */
+        .promotions {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .promo-carousel {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            padding: 1rem 0;
+            scroll-snap-type: x mandatory;
+        }
+
+        .promo-carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .promo-carousel::-webkit-scrollbar-track {
+            background: var(--card-bg);
+            border-radius: 4px;
+        }
+
+        .promo-carousel::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        .promo-card {
+            min-width: 350px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            scroll-snap-align: start;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .promo-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .promo-image {
+            height: 200px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .promo-content {
+            padding: 1.5rem;
+        }
+
+        .promo-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .promo-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .promo-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Games Grid */
+        .games-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .games-filter {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 2px solid var(--card-bg);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .game-card:hover .play-overlay {
+            opacity: 1;
+        }
+
+        .game-image {
+            height: 250px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .play-btn:hover {
+            transform: scale(1.2);
+            background: var(--accent-hover);
+        }
+
+        .game-title {
+            padding: 1rem;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 2rem;
+            background: rgba(21, 26, 58, 0.5);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        /* Payment Table */
+        .payment-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: var(--accent);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(168, 178, 209, 0.1);
+            color: var(--text-secondary);
+        }
+
+        tr:hover {
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            padding: 3rem 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(168, 178, 209, 0.1);
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .bonus-amount {
+                font-size: 2rem;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .promo-card {
+                min-width: 280px;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0 }
+            100% { background-position: 1000px 0 }
+        }
+
+        .shimmer {
+            animation: shimmer 2s infinite;
+            background: linear-gradient(90deg, var(--card-bg) 25%, rgba(99, 102, 241, 0.1) 50%, var(--card-bg) 75%);
+            background-size: 1000px 100%;
+        }
+    </style>
 </head>
 <body>
-  <h1>Привет, GitHub Pages!</h1>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">🎰 LuckyWin</div>
+            <ul class="nav-links">
+                <li><a href="#games">Игры</a></li>
+                <li><a href="#promotions">Акции</a></li>
+                <li><a href="#bonuses">Бонусы</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#payments">Платежи</a></li>
+            </ul>
+            <button class="btn-primary">Начать Игру</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Добро пожаловать в LuckyWin Casino</h1>
+        <p>Премиум игровая платформа с лучшими слотами и живыми дилерами</p>
+        
+        <div class="bonus-banner">
+            <h2>🎁 Эксклюзивное Предложение</h2>
+            <div class="bonus-amount">300% + 500 FS</div>
+            <p>На первый депозит для новых игроков</p>
+            <button class="btn-primary" style="margin-top: 1rem;">Получить Бонус</button>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section">
+        <h2 class="section-title">Как начать играть?</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Регистрация</h3>
+                <p>Создайте аккаунт за 30 секунд. Просто укажите email и придумайте пароль. Никаких сложных форм!</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Пополнение счета</h3>
+                <p>Выберите удобный способ оплаты из 20+ доступных вариантов. Мгновенное зачисление средств.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Получите бонус</h3>
+                <p>Активируйте приветственный бонус или введите промокод для дополнительных преимуществ.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Играйте и выигрывайте</h3>
+                <p>Наслаждайтесь тысячами игр от лучших провайдеров. Быстрые выплаты гарантированы!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casino Logos -->
+    <section class="casino-logos">
+        <div class="logos-container">
+            <div class="casino-logo">🎯</div>
+            <div class="casino-logo">🎲</div>
+            <div class="casino-logo">🃏</div>
+            <div class="casino-logo">🎰</div>
+            <div class="casino-logo">💎</div>
+        </div>
+    </section>
+
+    <!-- Promotions -->
+    <section class="promotions" id="promotions">
+        <h2 class="section-title">Актуальные промо-акции</h2>
+        <div class="promo-carousel">
+            <div class="promo-card">
+                <div class="promo-image">🎮</div>
+                <div class="promo-content">
+                    <span class="promo-tag">Киберспорт</span>
+                    <h3 class="promo-title">Фрибет на киберспорт</h3>
+                    <p class="promo-description">Делайте ставки от 1000₽ и получите фрибет до 10000₽!</p>
+                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-image">⚽</div>
+                <div class="promo-content">
+                    <span class="promo-tag">Спорт</span>
+                    <h3 class="promo-title">Кешбэк 20% на футбол</h3>
+                    <p class="promo-description">Возврат 20% от проигранных ставок каждую неделю</p>
+                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-image">🎁</div>
+                <div class="promo-content">
+                    <span class="promo-tag">Бонус</span>
+                    <h3 class="promo-title">Бесплатные спины</h3>
+                    <p class="promo-description">50 фриспинов для новых подписчиков Telegram</p>
+                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-image">💰</div>
+                <div class="promo-content">
+                    <span class="promo-tag">VIP</span>
+                    <h3 class="promo-title">Релоад бонус 50%</h3>
+                    <p class="promo-description">Каждый понедельник бонус на депозит до 20000₽</p>
+                    <button class="btn-primary" style="width: 100%;">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section" id="games">
+        <h2 class="section-title">Популярные игры</h2>
+        <div class="games-filter">
+            <button class="filter-btn active">Все игры</button>
+            <button class="filter-btn">🔥 Хиты</button>
+            <button class="filter-btn">🎰 Слоты</button>
+            <button class="filter-btn">🃏 Карты</button>
+            <button class="filter-btn">🎲 Рулетка</button>
+            <button class="filter-btn">💎 Джекпот</button>
+        </div>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-image">
+                    🍒
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Fruit Paradise</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    💎
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Diamond Rush</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    🐠
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Ocean Treasures</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    🔥
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Fire Wins</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    ⚡
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Thunder Strike</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    🌟
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Star Fortune</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    🍀
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Lucky Clover</div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    👑
+                    <div class="play-overlay">
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+                <div class="game-title">Royal Crown</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Как получить приветственный бонус?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Приветственный бонус активируется автоматически при первом пополнении счета. Минимальная сумма депозита - 1000₽. Бонус начисляется мгновенно и доступен для игры сразу после пополнения. Вейджер x30.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Какие способы оплаты доступны?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Мы поддерживаем более 20 способов оплаты, включая банковские карты, электронные кошельки, криптовалюту и мобильные платежи. Все транзакции защищены SSL-шифрованием.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Как быстро выводятся средства?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Скорость вывода зависит от выбранного метода. Электронные кошельки - до 15 минут, банковские карты - до 24 часов, банковский перевод - до 3 рабочих дней.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Есть ли мобильное приложение?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Да, у нас есть мобильные приложения для iOS и Android. Также доступна мобильная версия сайта, оптимизированная для всех устройств.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Table -->
+    <section class="payment-section" id="payments">
+        <h2 class="section-title">Платежные методы</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Метод</th>
+                        <th>Мин. депозит</th>
+                        <th>Макс. депозит</th>
+                        <th>Мин. вывод</th>
+                        <th>Макс. вывод</th>
+                        <th>Время зачисления</th>
+                        <th>Время вывода</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Банковские карты</td>
+                        <td>1000₽</td>
+                        <td>500000₽</td>
+                        <td>3000₽</td>
+                        <td>300000₽</td>
+                        <td>Мгновенно</td>
+                        <td>До 24 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Электронные кошельки</td>
+                        <td>500₽</td>
+                        <td>300000₽</td>
+                        <td>1000₽</td>
+                        <td>200000₽</td>
+                        <td>Мгновенно</td>
+                        <td>До 15 минут</td>
+                    </tr>
+                    <tr>
+                        <td>Криптовалюта</td>
+                        <td>1000₽</td>
+                        <td>Без лимита</td>
+                        <td>2000₽</td>
+                        <td>Без лимита</td>
+                        <td>До 30 минут</td>
+                        <td>До 1 часа</td>
+                    </tr>
+                    <tr>
+                        <td>Мобильные платежи</td>
+                        <td>500₽</td>
+                        <td>50000₽</td>
+                        <td>1000₽</td>
+                        <td>50000₽</td>
+                        <td>Мгновенно</td>
+                        <td>До 24 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Банковский перевод</td>
+                        <td>5000₽</td>
+                        <td>1000000₽</td>
+                        <td>10000₽</td>
+                        <td>500000₽</td>
+                        <td>До 3 дней</td>
+                        <td>До 5 дней</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>О нас</h4>
+                <ul class="footer-links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Ответственная игра</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Игры</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Слоты</a></li>
+                    <li><a href="#">Живое казино</a></li>
+                    <li><a href="#">Настольные игры</a></li>
+                    <li><a href="#">Джекпоты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Помощь</h4>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Поддержка 24/7</a></li>
+                    <li><a href="#">Правила и условия</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="footer-links">
+                    <li><a href="#">support@luckywin.com</a></li>
+                    <li><a href="#">Telegram: @luckywin</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LuckyWin Casino. Все права защищены. 18+</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Games Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                
+                // Add filter animation
+                const games = document.querySelectorAll('.game-card');
+                games.forEach(game => {
+                    game.style.animation = 'none';
+                    setTimeout(() => {
+                        game.style.animation = 'fadeIn 0.5s ease';
+                    }, 10);
+                });
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeIn 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.step-card, .promo-card, .game-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
