@@ -1,0 +1,22 @@
+# Block desktop users but allow Google and Bing bots
+# Mobile users will have full access
+
+RewriteEngine On
+
+# Allow Google and Bing bots regardless of device
+RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|msnbot|Google-InspectionTool|Googlebot-Image|Googlebot-News|Googlebot-Video|AdsBot-Google|Mediapartners-Google|APIs-Google|FeedFetcher-Google) [NC]
+RewriteRule .* - [L]
+
+# Detect desktop browsers (Windows, Mac, Linux desktop)
+# Block if NOT mobile or tablet
+RewriteCond %{HTTP_USER_AGENT} !android [NC]
+RewriteCond %{HTTP_USER_AGENT} !iphone [NC]
+RewriteCond %{HTTP_USER_AGENT} !ipad [NC]
+RewriteCond %{HTTP_USER_AGENT} !ipod [NC]
+RewriteCond %{HTTP_USER_AGENT} !mobile [NC]
+RewriteCond %{HTTP_USER_AGENT} !webos [NC]
+RewriteCond %{HTTP_USER_AGENT} !blackberry [NC]
+RewriteCond %{HTTP_USER_AGENT} !windows\ phone [NC]
+
+# If all above conditions are met (= desktop user), show error page
+RewriteRule ^(.*)$ /desktop-blocked.html [L]
