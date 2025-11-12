@@ -1,6 +1,4 @@
-ниже — готовая страница «Об авторе» в том же стиле и с такой же системой классов, сеткой и шрифтами. Вставляй как отдельный файл `about.html` или заменяй контент существующей страницы. Я сохранил палитру, хедер/футер, адаптив, а также добавил расширенный `Person` schema.org, политику редакции и блок доверия.
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,19 +14,19 @@
   <meta property="og:title" content="About the Author — insurancenewsnepal.com">
   <meta property="og:description" content="Meet Rajesh Kumar, iGaming analyst and eSewa specialist. See how we test casinos and payments, our verification flow, and how to contact us.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://insurancenewsnepal.com/about/">
+  <meta property="og:url" content="https://insurancenewsnepal.com/about.html">
   <meta property="og:image" content="https://insurancenewsnepal.com/og-image-about.jpg">
   <meta property="og:site_name" content="insurancenewsnepal.com">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="en">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About the Author — insurancenewsnepal.com">
   <meta name="twitter:description" content="Our author, process, and standards.">
   <meta name="twitter:image" content="https://insurancenewsnepal.com/twitter-about.jpg">
-  <link rel="canonical" href="https://insurancenewsnepal.com/about/">
-  <link rel="alternate" hreflang="en" href="https://insurancenewsnepal.com/about/">
-  <link rel="alternate" hreflang="ne" href="https://insurancenewsnepal.com/ne/about/">
+  <link rel="canonical" href="https://insurancenewsnepal.com/about.html">
+  <link rel="alternate" hreflang="en" href="https://insurancenewsnepal.com/about.html">
+  <link rel="alternate" hreflang="ne" href="https://insurancenewsnepal.com/ne/about.html">
   <title>About the Author — insurancenewsnepal.com</title>
 
   <!-- Structured Data -->
@@ -60,7 +58,7 @@
         "@id":"https://insurancenewsnepal.com/#person-rajesh",
         "name":"Rajesh Kumar",
         "description":"iGaming analyst and eSewa payment specialist.",
-        "image":"https://insurancenewsnepal.com/author-avatar.png",
+        "image":"https://insurancenewsnepal.com/about.htmlvatar.png",
         "jobTitle":"Lead Analyst",
         "affiliation":{"@id":"https://insurancenewsnepal.com/#organization"},
         "knowsAbout":[
@@ -72,20 +70,20 @@
       },
       {
         "@type":"BreadcrumbList",
-        "@id":"https://insurancenewsnepal.com/about/#breadcrumb",
+        "@id":"https://insurancenewsnepal.com/about.html#breadcrumb",
         "itemListElement":[
           {"@type":"ListItem","position":1,"name":"Home","item":"https://insurancenewsnepal.com/"},
-          {"@type":"ListItem","position":2,"name":"About","item":"https://insurancenewsnepal.com/about/"}
+          {"@type":"ListItem","position":2,"name":"About","item":"https://insurancenewsnepal.com/about.html"}
         ]
       },
       {
         "@type":"WebPage",
-        "@id":"https://insurancenewsnepal.com/about/#webpage",
-        "url":"https://insurancenewsnepal.com/about/",
+        "@id":"https://insurancenewsnepal.com/about.html#webpage",
+        "url":"https://insurancenewsnepal.com/about.html",
         "name":"About the Author — insurancenewsnepal.com",
         "isPartOf":{"@id":"https://insurancenewsnepal.com/#website"},
         "about":{"@id":"https://insurancenewsnepal.com/#person-rajesh"},
-        "breadcrumb":{"@id":"https://insurancenewsnepal.com/about/#breadcrumb"},
+        "breadcrumb":{"@id":"https://insurancenewsnepal.com/about.html#breadcrumb"},
         "primaryImageOfPage":{"@type":"ImageObject","url":"https://insurancenewsnepal.com/hero-about.jpg"},
         "datePublished":"2025-01-10T00:00:00+05:45",
         "dateModified":"2025-11-12T00:00:00+05:45",
@@ -142,7 +140,7 @@
 
     /* Author block */
     .author-card{display:grid;grid-template-columns:160px 1fr;gap:2rem;align-items:start}
-    .author-avatar{width:160px;height:160px;border-radius:50%;overflow:hidden;border:4px solid var(--primary);box-shadow:var(--card-shadow-hover)}
+    .about.htmlvatar{width:160px;height:160px;border-radius:50%;overflow:hidden;border:4px solid var(--primary);box-shadow:var(--card-shadow-hover)}
     .author-info h4{color:var(--text-secondary);font-size:.9rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem}
     .author-info h3{color:var(--primary);font-size:1.75rem;margin-bottom:.5rem}
     .author-info p{color:var(--text-secondary);line-height:1.8;margin-bottom:1rem}
@@ -196,7 +194,7 @@
       .nav-links,.trust-badge{display:none}
       .mobile-menu-btn{display:block}
       .author-card{grid-template-columns:1fr;text-align:center;gap:1rem}
-      .author-avatar{margin:0 auto;width:120px;height:120px}
+      .about.htmlvatar{margin:0 auto;width:120px;height:120px}
       .contact{grid-template-columns:1fr}
     }
     @media(max-width:640px){
@@ -223,7 +221,7 @@
         <li><a href="/#top-casinos">Top Casinos</a></li>
         <li><a href="/#how-it-works">How It Works</a></li>
         <li><a href="/#faq">FAQ</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/about.html">About</a></li>
       </ul>
       <div class="trust-badge">SSL Secured | 18+ Only</div>
     </nav>
@@ -241,7 +239,7 @@
       <li><a href="/#top-casinos" onclick="toggleMobileMenu()">Top Casinos</a></li>
       <li><a href="/#how-it-works" onclick="toggleMobileMenu()">How It Works</a></li>
       <li><a href="/#faq" onclick="toggleMobileMenu()">FAQ</a></li>
-      <li><a href="/about/" onclick="toggleMobileMenu()">About</a></li>
+      <li><a href="/about.html" onclick="toggleMobileMenu()">About</a></li>
     </ul>
   </div>
 
@@ -259,8 +257,8 @@
     <!-- Author Card -->
     <section class="info-section">
       <div class="author-card">
-        <div class="author-avatar">
-          <img src="/author-avatar.png" alt="Portrait of Rajesh Kumar" style="width:100%;height:100%;object-fit:cover;border-radius:50%">
+        <div class="about.htmlvatar">
+          <img src="/about.htmlvatar.png" alt="Portrait of Rajesh Kumar" style="width:100%;height:100%;object-fit:cover;border-radius:50%">
         </div>
         <div class="author-info">
           <h4>Lead Analyst</h4>
@@ -445,9 +443,9 @@
       <div class="footer-section">
         <h4>About Us</h4>
         <ul class="footer-links">
-          <li><a href="/about/">Our Mission</a></li>
-          <li><a href="/about/#methodology">Review Process</a></li>
-          <li><a href="/about/#contact">Contact Us</a></li>
+          <li><a href="/about.html">Our Mission</a></li>
+          <li><a href="/about.html#methodology">Review Process</a></li>
+          <li><a href="/about.html#contact">Contact Us</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/terms/">Terms of Service</a></li>
         </ul>
@@ -480,4 +478,3 @@
   </script>
 </body>
 </html>
-```
